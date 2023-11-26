@@ -1,5 +1,5 @@
 sequenceDiagram
-  browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+  browser->>server: POST "note: hello" https://studies.cs.helsinki.fi/exampleapp/new_note
   activate server
   server->>browser: HTML document
   deactivate server
@@ -21,5 +21,5 @@ sequenceDiagram
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   activate server
-  server-->>browser: {content: 'lolcito en Lan? add qilqay', date: '2023-11-24T16:46:20.525Z'}
+  server-->>browser: the JSON file with new note
   deactivate server
